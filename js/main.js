@@ -12,10 +12,15 @@ function dizOi(nome) {
 
 dizOi("Darlan") 
 
-somar.addEventListener("click", (evento) => {
-    braco.value = parseInt(braco.value) + 1
-})
+somar.addEventListener("click", () => {manipulaDados(somar)})
 
-subtrair.addEventListener("click", (evento) => {
+subtrair.addEventListener("click", () => {manipulaDados(subtrair)})
+
+function manipulaDados (operacao) {
+    if (operacao === subtrair){
     braco.value = parseInt(braco.value) - 1
-})
+    } else {
+        braco.value = parseInt(braco.value) + 1
+    }
+
+}
