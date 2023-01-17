@@ -2,6 +2,8 @@ const robotron = document.querySelector("#robotron");
 const somar = document.querySelector("#somar");
 const subtrair = document.querySelector("#subtrair");
 const controle = document.querySelectorAll("[data-controle]");
+// Este "[data-controle]" é um data-atributes que utilizei para substituir as ids em html
+// evitando com que haja problemas ao substituir nomes de ids
 
 controle.forEach( (elemento) => {elemento.addEventListener("click", (evento) => 
     {manipulaDados(evento.target.dataset.controle, evento.target.parentNode)
