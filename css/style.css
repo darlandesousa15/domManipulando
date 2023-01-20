@@ -17,6 +17,20 @@ body {
     font-weight: 300;
 }
 
+.botoes {
+margin: 5px;
+width: 200px;
+font-family: 'Teko', sans-serif;
+border:#FFFFFF;
+}
+
+.alterar {
+position: relative;
+left: 10%;
+bottom: 10%;
+display: flex;
+}
+
 body, input {
     font-family: 'Teko', sans-serif;
 }
@@ -50,8 +64,8 @@ main {
     font-weight: 500;
     font-size: 130px;
     position: absolute;
-    bottom: 7rem;
-    left: -3rem;
+    bottom: 5rem;
+    left: -5rem;
     line-height: 0.8;
     writing-mode: vertical-rl;
     text-orientation: mixed;
@@ -62,7 +76,7 @@ main {
     background: rgba(0,0,0,0.6);
     clip-path: polygon(calc(100% - 30px) 0, 100% 30px, 100% calc(100% - 30px), calc(100% - 30px) 100%, 30px 100%, 0 calc(100% - 30px), 0 30px, 30px 0);
     border-left: 5px solid var(--main-cinza);
-    height: 80%;
+    height: 90%;
 }
 
 /****************************** Equipamentos *****/

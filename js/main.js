@@ -39,6 +39,8 @@ const pecas = {
     }
 }
 
+alert("Escolha a cor de seu Robotron");
+
 controle.forEach( (elemento) => {elemento.addEventListener("click", (evento) => 
     {manipulaDados(evento.target.dataset.controle, evento.target.parentNode)
     atualizaEstatisticas(evento.target.dataset.peca)
@@ -47,13 +49,13 @@ controle.forEach( (elemento) => {elemento.addEventListener("click", (evento) =>
 
 robotron.addEventListener("click", (evento) => {console.log(evento)})
 
-function dizOi(nome) {
+/*function dizOi(nome) {
     console.log('Oi ' + nome)
     console.log('Bem-vindo ao Robotron 2000')
 }
 
 dizOi("Darlan") 
-
+*/
 
 function manipulaDados (operacao, controle) {
     const peca = controle.querySelector("[data-contador]");
@@ -70,4 +72,7 @@ function atualizaEstatisticas(peca) {
         elemento.textContent = parseInt(elemento.textContent) + pecas[peca][elemento.dataset.estatistica]
     })
 
+}
+function trocaImagem(cor){
+    document.querySelector(".robo").src="img/Robotron 2000 - " + cor + ".png";
 }
